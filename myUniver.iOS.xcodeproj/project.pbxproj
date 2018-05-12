@@ -15,6 +15,7 @@
 		795A1FA420A6F62300C46E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795A1FA220A6F62300C46E88 /* LaunchScreen.storyboard */; };
 		795A1FAF20A6F62300C46E88 /* myUniver_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795A1FAE20A6F62300C46E88 /* myUniver_iOSTests.swift */; };
 		795A1FBA20A6F62300C46E88 /* myUniver_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795A1FB920A6F62300C46E88 /* myUniver_iOSUITests.swift */; };
+		79BFBAF320A6FC4F00F488D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79BFBAF220A6FC4F00F488D1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		795A1FB520A6F62300C46E88 /* myUniver.iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myUniver.iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795A1FB920A6F62300C46E88 /* myUniver_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myUniver_iOSUITests.swift; sourceTree = "<group>"; };
 		795A1FBB20A6F62300C46E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79BFBAF220A6FC4F00F488D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A03AB0A5861F8A7B991EC92 /* Pods-myUniver.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myUniver.iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-myUniver.iOS/Pods-myUniver.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B75275AC6AEDAE645B33CEDB /* Pods_myUniver_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myUniver_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 		795A1F9820A6F62100C46E88 /* myUniver.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				79BFBAF220A6FC4F00F488D1 /* GoogleService-Info.plist */,
 				795A1F9920A6F62100C46E88 /* AppDelegate.swift */,
 				795A1F9B20A6F62100C46E88 /* ViewController.swift */,
 				795A1F9D20A6F62100C46E88 /* Main.storyboard */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				795A1FA420A6F62300C46E88 /* LaunchScreen.storyboard in Resources */,
+				79BFBAF320A6FC4F00F488D1 /* GoogleService-Info.plist in Resources */,
 				795A1FA120A6F62300C46E88 /* Assets.xcassets in Resources */,
 				795A1F9F20A6F62100C46E88 /* Main.storyboard in Resources */,
 			);
@@ -285,13 +289,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-myUniver.iOS/Pods-myUniver.iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
